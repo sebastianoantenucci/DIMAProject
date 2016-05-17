@@ -6,13 +6,11 @@ import android.os.Bundle;
 
 public class LauncherActivity extends AppCompatActivity {
 
-    /*
-    * This method is used to create this LauncherActivities which has the job to load the LogIn Activity
-    * */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Intent goToLogIn = new Intent(LauncherActivity.this, LoginActivity.class);
-        startActivity(goToLogIn);
+        setContentView(R.layout.activity_launcher);
+        Intent launch = new Intent(LauncherActivity.this, LoginActivity.class);
+        startActivity(launch);
     }
 }
